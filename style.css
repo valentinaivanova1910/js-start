@@ -48,3 +48,46 @@ input {
   justify-content: center;
   text-align: center;
 }
+.hide-text{
+  font-size: 10px;
+  line-height: 8px;
+  letter-spacing: 2px;
+}
+.section{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 200px;
+
+}
+.list{
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  background-color: #73b4ce;
+  width: 30%;
+  margin: 0;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 0;
+}
+.language{
+ display:flex;
+ gap: 10px;
+ border: none;
+  outline: none;
+  width: 100%;
+  text-align: center;
+  background-color: #8ccfe9;
+  padding: 20px;
+
+}
+.description{
+  border: 2px solid #73b4ce;
+  font-size: 10px;
+  line-height: 8px;
+  letter-spacing: 2px;
+  justify-content: center;
+  text-align: center;
+  padding: 50px;
+}

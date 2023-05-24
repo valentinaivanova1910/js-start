@@ -10,24 +10,30 @@ btn.onclick = function () {
   div1.innerHTML = Random();
 };
 
-const div = document.querySelector("div");
+const daw = document.querySelector(".daw");
+console.log(daw)
 
-div.addEventListener(
+daw.addEventListener(
   "mousemove",
   (e) => {
     let x = e.pageX,
       y = e.pageY;
-
-    console.log(`${x - div.offsetLeft}:${y - div.offsetTop}`);
+    console.log(`${x - daw.offsetLeft}:${y - daw.offsetTop}`);
   },
-  {
-    capture: true,
-  }
 );
+
 const btns = document.querySelectorAll(".text");
 for (let btn of btns) {
   btn.onclick = () => {
     const text = btn.parentElement.querySelector(".hide-text");
     text.style.display = text.style.display === "none" ? "block" : "none";
+  };
+}
+
+const btn1 = document.querySelectorAll(".language");
+for (let btn of btn1) {
+  btn1.onclick = () => {
+    const textOne = btn1.parentElement.querySelector(".list");
+    textOne.style.display = textOne.style.display === "none" ? "block" : "none";
   };
 }
